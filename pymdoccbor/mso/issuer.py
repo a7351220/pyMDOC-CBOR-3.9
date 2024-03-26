@@ -122,7 +122,7 @@ class MsoIssuer(MsoX509Fabric):
         self,
         device_key: Union[dict, None] = None,
         valid_from: Union[None, datetime.datetime] = None,
-        doctype: str | None = None
+        doctype: Union[str, None] = None
     ) -> Sign1Message:
         """
         Sign a mso and returns it
