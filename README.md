@@ -34,9 +34,8 @@ pip install pymdoccbor
 or
 
 ````
-pip install git+https://github.com/peppelinux/pyMDOC-CBOR.git
+pip install git+https://github.com/a7351220/pyMDOC-CBOR-3.9.git
 ````
-
 ## Usage
 
 ### Issue an MDOC CBOR
