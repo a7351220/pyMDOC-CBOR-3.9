@@ -3,7 +3,7 @@ import cbor2
 import logging
 
 from pycose.keys import CoseKey, EC2Key
-from typing import Union
+from typing import Union, List
 
 from pymdoccbor.mso.issuer import MsoIssuer
 from pymdoccbor.mdoc.exceptions import MissingPrivateKey
@@ -44,9 +44,9 @@ class MdocCborIssuer:
 
     def new(
         self,
-        data: dict | list[dict],
+        data: Union[dict, List[dict]],
         devicekeyinfo: Union[dict, CoseKey],
-        doctype: str | None = None
+        doctype: Union[str, None] = None
     ) -> dict:
         """
         create a new mdoc with signed mso
